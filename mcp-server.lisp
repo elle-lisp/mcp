@@ -1231,7 +1231,7 @@
 
 ## Transport: stdio by default. With `--listen unix:///path` (or
 ## `tcp://addr:port`) the server accepts connections on a socket, so several
-## cordis-pi hosts can share ONE elle process. Each connection runs the same
+## cordis-agent hosts can share ONE elle process. Each connection runs the same
 ## line loop in its own fiber; `parameterize` rebinds *stdin*/*stdout* to the
 ## connection's ports (print/println respect that rebinding — stdlib.lisp),
 ## and parameter frames are per-fiber, so concurrent connections don't
